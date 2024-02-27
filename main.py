@@ -15,7 +15,7 @@ def copy_files(source_dir: Path, dest_dir: Path) -> None:
 
 def main():
     source_path = Path(input("Введіть вхідну папку: "))
-    dest_path = Path(input("Введіть папку призначення (press Enter for default 'dist'): ") or 'dist')
+    dest_path = Path(input("Введіть папку призначення (нажми Enter для збереження по замовчанню 'dist'): ") or 'dist')
 
     if not source_path.exists():
         print("Такоі папки не існує.")
